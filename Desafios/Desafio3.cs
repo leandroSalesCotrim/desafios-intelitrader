@@ -12,7 +12,9 @@ public class Desafio3
 
         Console.WriteLine("OBS: optei por deixar o caminho utilizando por padrão o arquivo.txt que criei para este projeto para deixar mais facil de executar");
 
-        String caminho = "../../../arquivo.txt";
+        String caminho = "./arquivo.txt";
+        string diretorioAtual = System.IO.Directory.GetCurrentDirectory();
+        Console.WriteLine("Diretório Atual: " + diretorioAtual);
 
 
         int escolha = 0;
