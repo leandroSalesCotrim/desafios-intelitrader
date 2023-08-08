@@ -12,10 +12,8 @@ public class Desafio3
 
         Console.WriteLine("OBS: optei por deixar o caminho utilizando por padrão o arquivo.txt que criei para este projeto para deixar mais facil de executar");
 
+        //definindo caminho do diretório até o arquivo.txt
         String caminho = "./arquivo.txt";
-        string diretorioAtual = System.IO.Directory.GetCurrentDirectory();
-        Console.WriteLine("Diretório Atual: " + diretorioAtual);
-
 
         int escolha = 0;
         while (escolha != 3)
@@ -41,13 +39,17 @@ public class Desafio3
                 }
                 else if (escolha == 2)
                 {
-                        //Convertendo o conteudo que esta em base64 para a forma original em bytes e exibindo no formato utf8
-                        byte[] arquivoEmBytes = Convert.FromBase64String(arquivoConteudo);
-                        String arquivoDecodificado = System.Text.Encoding.UTF8.GetString(arquivoEmBytes);
+                    //Convertendo o conteudo que esta em base64 para a forma original em bytes e exibindo no formato utf8
+                    byte[] arquivoEmBytes = Convert.FromBase64String(arquivoConteudo);
+                    String arquivoDecodificado = System.Text.Encoding.UTF8.GetString(arquivoEmBytes);
 
-                        //Restaurando conteudo do arquivo para o conteudo original 
-                        File.WriteAllText(caminho, arquivoDecodificado);
-                        System.Console.WriteLine("arquivo.txt decodificado de base64 para a forma original: " + arquivoDecodificado);
+                    //Restaurando conteudo do arquivo para o conteudo original 
+                    File.WriteAllText(caminho, arquivoDecodificado);
+                    System.Console.WriteLine("arquivo.txt decodificado de base64 para a forma original: " + arquivoDecodificado);
+                }
+                else
+                {
+                    Console.WriteLine("Escolha uma opção valida");
                 }
             }
             else
