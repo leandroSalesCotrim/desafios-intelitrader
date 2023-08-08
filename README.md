@@ -1,5 +1,6 @@
 # desafios-intelitrader
 <b>Desafios escolhidos🐱‍💻:</b>
+  <br><b>*Desafio 2:</b> Crie uma aplicação que criptografa/descriptografa arquivos utilizando Cifra de César
   <br><b>*Desafio 3:</b> Crie uma aplicação que codifica/decodifica arquivos para Base64
   <br><b>*Desafio 6:</b> Crie uma aplicação capaz de realizar multiplicação de números com mais de 22 caracteres (bigInt)
   
